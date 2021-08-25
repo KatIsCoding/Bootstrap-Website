@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-dark" id="main-navbar">
+        <a href="#scrollspyHeading1">John Doe</a>
+        <a href="#mainWork">Portfolio</a>
+        <a href="#scrollspyHeading3">About Me</a>
+        <a href="#contactme-form">Contact</a>
+        <a href="#scrollspyHeading5">
+            <img src="./src/Disabled.svg" alt="A mail icon">
+        </a>
+    </nav>
+    <section data-bs-spy="scroll" data-bs-target="main-navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+    </section>
+
+    <section id="mainWork" class="main-work container">
+        <div class="row">
+        <div class="card col">
+            <img class="card-img-top" src="./src/workImgPlaceholder.svg" alt="" >
+            <div class="card-body">
+                <h5 class="card-title">Multi-Post Stories</h5>
+                <p class="card-text">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                </p>
+                <div class="container skills-handler">
+                    <span class="badge bg-secondary">css</span>
+                    <span class="badge bg-secondary">html</span>
+                    <span class="badge bg-secondary">bootstrap</span>
+                    <span class="badge bg-secondary">Ruby</span>
+                </div>
+                <button type="button" class="btn btn-primary see-work-button" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
+            </div>
+        </div>
+
+        <div class="card col">
+            <img class="card-img-top" src="./src/workImgPlaceholder.svg" alt="" >
+            <div class="card-body">
+                <h5 class="card-title">Multi-Post Stories</h5>
+                <p class="card-text">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                </p>
+                <div class="container skills-handler">
+                    <span class="badge bg-secondary">css</span>
+                    <span class="badge bg-secondary">html</span>
+                    <span class="badge bg-secondary">bootstrap</span>
+                    <span class="badge bg-secondary">Ruby</span>
+                </div>
+                <button type="button" class="btn btn-primary see-work-button" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
+            </div>
+        </div>
+
+        <div class="card col">
+            <img class="card-img-top" src="./src/workImgPlaceholder.svg" alt="" >
+            <div class="card-body">
+                <h5 class="card-title">Multi-Post Stories</h5>
+                <p class="card-text">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                </p>
+                <div class="container skills-handler">
+                    <span class="badge bg-secondary">css</span>
+                    <span class="badge bg-secondary">html</span>
+                    <span class="badge bg-secondary">bootstrap</span>
+                    <span class="badge bg-secondary">Ruby</span>
+                </div>
+                <button type="button" class="btn btn-primary see-work-button" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div id="work-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">This is my Project</h5>
+                </div>
+                <div class="modal-body">
+                    <p>This is a really cool project</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="contactme-form">
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Address">   
+        </div>
+        <textarea class="form-control" placeholder="Enter text here" maxlength="300"></textarea>
+        <button type="submit" class="btn btn-primary see-work-button">Get In Touch</button>
+    </form>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
