@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.card {
+  width: 30rem;
+}
+
+.skills-handler {
+  margin-bottom: 0.7rem;
+  padding-left: 0;
+}
+
+.see-work-button {
+  background-color: #f55800;
+}
+
+form {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}

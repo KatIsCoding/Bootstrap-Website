@@ -8,6 +8,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <a href="#scrollspyHeading1">John Doe</a>
         <a href="#mainWork">Portfolio</a>
         <a href="#scrollspyHeading3">About Me</a>
-        <a href="#scrollspyHeading4">Contact</a>
+        <a href="#contactme-form">Contact</a>
         <a href="#scrollspyHeading5">
             <img src="./src/Disabled.svg" alt="A mail icon">
         </a>
@@ -35,54 +36,54 @@
 
     <section id="mainWork" class="main-work container">
         <div class="row">
-        <div class="card col" style="width: 30rem;">
-            <img class="card-img-top" src="./src/Img Placeholder.svg" alt="" >
+        <div class="card col">
+            <img class="card-img-top" src="./src/workImgPlaceholder.svg" alt="" >
             <div class="card-body">
                 <h5 class="card-title">Multi-Post Stories</h5>
                 <p class="card-text">
                     A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
                 </p>
-                <div class="container" style="margin-bottom: 0.7rem; padding-left: 0px;">
+                <div class="container skills-handler">
                     <span class="badge bg-secondary">css</span>
                     <span class="badge bg-secondary">html</span>
                     <span class="badge bg-secondary">bootstrap</span>
                     <span class="badge bg-secondary">Ruby</span>
                 </div>
-                <button type="button" class="btn btn-primary" style="background-color: #F55800" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
+                <button type="button" class="btn btn-primary see-work-button" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
             </div>
         </div>
 
-        <div class="card col" style="width: 30rem;">
-            <img class="card-img-top" src="./src/Img Placeholder.svg" alt="" >
+        <div class="card col">
+            <img class="card-img-top" src="./src/workImgPlaceholder.svg" alt="" >
             <div class="card-body">
                 <h5 class="card-title">Multi-Post Stories</h5>
                 <p class="card-text">
                     A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
                 </p>
-                <div class="container" style="margin-bottom: 0.7rem; padding-left: 0px;">
+                <div class="container skills-handler">
                     <span class="badge bg-secondary">css</span>
                     <span class="badge bg-secondary">html</span>
                     <span class="badge bg-secondary">bootstrap</span>
                     <span class="badge bg-secondary">Ruby</span>
                 </div>
-                <button type="button" class="btn btn-primary" style="background-color: #F55800" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
+                <button type="button" class="btn btn-primary see-work-button" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
             </div>
         </div>
 
-        <div class="card col" style="width: 30rem;">
-            <img class="card-img-top" src="./src/Img Placeholder.svg" alt="" >
+        <div class="card col">
+            <img class="card-img-top" src="./src/workImgPlaceholder.svg" alt="" >
             <div class="card-body">
                 <h5 class="card-title">Multi-Post Stories</h5>
                 <p class="card-text">
                     A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
                 </p>
-                <div class="container" style="margin-bottom: 0.7rem; padding-left: 0px;">
+                <div class="container skills-handler">
                     <span class="badge bg-secondary">css</span>
                     <span class="badge bg-secondary">html</span>
                     <span class="badge bg-secondary">bootstrap</span>
                     <span class="badge bg-secondary">Ruby</span>
                 </div>
-                <button type="button" class="btn btn-primary" style="background-color: #F55800" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
+                <button type="button" class="btn btn-primary see-work-button" data-bs-toggle="modal" data-bs-target="#work-modal">See Project</button>
             </div>
         </div>
         </div>
@@ -98,13 +99,13 @@
                     <p>This is a really cool project</p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-danger" id="close">Close</button>
+                    <button type="button" class="btn btn-danger" id="close">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <form style="width: 60%">
+    <form id="contactme-form">
         <div class="mb-3">
             <input type="text" class="form-control" placeholder="First Name">
         </div>
@@ -115,7 +116,7 @@
             <input type="email" class="form-control" placeholder="Email Address">   
         </div>
         <textarea class="form-control" placeholder="Enter text here" maxlength="300"></textarea>
-        <button type="submit" class="btn btn-primary">Get In Touch</button>
+        <button type="submit" class="btn btn-primary see-work-button">Get In Touch</button>
     </form>
     
 
